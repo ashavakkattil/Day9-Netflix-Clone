@@ -8,4 +8,84 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  background: #141414;
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.primary-btn {
+  display: block;
+  background: #e50914;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem 0;
+  height: 90vh;
+  background: url("../images/showcase.jpg") center/cover no-repeat;
+}
+/* style for the gradient above the showcase image */
+.main-header::after {
+  content: "";
+  height: 90vh;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+/* Nav bar */
+.main-header .main-nav {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.main-nav .logo {
+  width: 180px;
+}
+.main-header .sign-in-btn {
+  position: absolute;
+  right: 50px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  line-height: 1.8rem;
+  border-radius: 5px;
+  padding: 2px 22px;
+  margin-top: 6px;
+  z-index: 2;
+}
+
+/* Header content */
+.main-header .header-content {
+  align-self: center;
+  text-align: center;
+  margin-top: 20vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-header .header-content h1 {
+  font-size: 5.5rem;
+}
+.main-header .header-content p {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.main-header .header-content .showcase-btn {
+  padding: 1rem;
+  width: 82%;
+  margin: 2rem 0;
+  font-size: 2rem;
 }
