@@ -7,7 +7,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
   background: #141414;
   color: #ffffff;
 }
@@ -23,7 +22,10 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
-
+.container {
+  max-width: 70%;
+  margin: auto;
+}
 /* Header */
 .main-header {
   display: flex;
@@ -83,9 +85,83 @@ a {
   text-transform: uppercase;
   font-size: 2rem;
 }
-.main-header .header-content .showcase-btn {
+.main-header .header-content .watch-btn {
   padding: 1rem;
   width: 82%;
   margin: 2rem 0;
   font-size: 2rem;
+}
+
+/* Tabs */
+/* Tabs headings */
+.tabs {
+  border-bottom: 3px solid #999999;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 2.5rem 0 0 0;
+  color: #999999;
+}
+.grid-3 p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+/* Tab content */
+.tab-content {
+  background: #000000;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.tab-1-content img {
+  width: 100%;
+}
+.tab-1-content p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.tab-1-content .watch-btn {
+  padding: 0.6rem 1rem;
+  width: 40%;
+}
+.tab-2-content .grid-2 {
+  grid-template-columns: 4fr 2fr;
+  grid-gap: 1rem;
+}
+.tab-2-content p {
+  font-size: 1.8rem;
+}
+.tab-2-content .watch-btn {
+  padding: 0.8rem 1rem;
+  width: 95%;
+  align-self: flex-start;
+}
+.tab-2-content .grid-3 {
+  padding: 1rem 2.5rem;
+  align-items: flex-start;
+}
+.tab-2-content .grid-3 img {
+  width: 400px;
+  margin-bottom: 0.5rem;
+}
+.tab-2-content .grid-3 p, .tab-2-content .grid-3 h3 {
+  font-weight: normal;
+  color: #ffffff;
+  margin: 10px 0px 25px 0px;
+}
+.tab-2-content .grid-3 p{
+  font-size: 1rem;
+  color: #999999;
 }
