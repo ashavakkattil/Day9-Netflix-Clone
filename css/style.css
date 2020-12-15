@@ -24,6 +24,10 @@ ul {
   text-align: center;
   text-transform: uppercase;
 }
+.watch-btn {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+}
 .container {
   max-width: 70%;
   margin: auto;
@@ -48,7 +52,8 @@ ul {
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
-/* Nav bar */
+/* ----------------------------------------------------------Nav bar--------------------------------------------- */
+
 .main-header .main-nav {
   display: flex;
   justify-content: center;
@@ -70,7 +75,8 @@ ul {
   z-index: 2;
 }
 
-/* Header content */
+/* ----------------------------------------------------------Header content--------------------------------------------- */
+
 .main-header .header-content {
   align-self: center;
   text-align: center;
@@ -81,20 +87,22 @@ ul {
   align-items: center;
 }
 .main-header .header-content h1 {
-  font-size: 5.5rem;
+  font-size: 5.2rem;
+  margin-bottom: 1.5rem;
 }
 .main-header .header-content p {
   text-transform: uppercase;
   font-size: 2rem;
 }
 .main-header .header-content .watch-btn {
-  padding: 1rem;
+  padding: 1.5rem;
   width: 82%;
   margin: 2rem 0;
   font-size: 2rem;
 }
 
-/* Tabs */
+/* ----------------------------------------------------------Tabs------------------------------------------------------- */
+
 /* Tabs headings */
 .tabs {
   border-bottom: 3px solid #999999;
@@ -103,9 +111,9 @@ ul {
 #tab-2,
 #tab-3 {
   width: 90%;
-  border-bottom: 4px solid #e50914;
+  padding-bottom: 1rem;
 }
-.tab-headers > div{
+.tab-headers > div {
   cursor: pointer;
 }
 .tab-headers > div:hover {
@@ -147,19 +155,17 @@ ul {
   margin-bottom: 1rem;
 }
 .tab-1-content .watch-btn {
-  padding: 0.6rem 1rem;
-  width: 40%;
+  width: 50%;
 }
 .tab-2-content .grid-2 {
   grid-template-columns: 4fr 2fr;
   grid-gap: 1rem;
-  padding: 2.2rem;
+  padding: 3rem 2.2rem;
 }
 .tab-2-content p {
   font-size: 1.8rem;
 }
 .tab-2-content .watch-btn {
-  padding: 0.8rem 1rem;
   width: 95%;
   align-self: flex-start;
 }
@@ -168,7 +174,7 @@ ul {
   align-items: flex-start;
 }
 .tab-2-content .grid-3 img {
-  width: 400px;
+  width: 100%;
   margin-bottom: 0.5rem;
 }
 .tab-2-content .grid-3 p,
@@ -193,7 +199,6 @@ ul {
   margin: 1rem 0;
 }
 .tab-3-content .watch-btn {
-  padding: 0.8rem 1rem;
   align-self: center;
 }
 .tab-3-content .pricing-table {
@@ -225,6 +230,7 @@ ul {
   text-transform: uppercase;
   font-size: 1rem;
 }
+/* Tabs functionality */
 #tab-1-content,
 #tab-2-content,
 #tab-3-content {
@@ -236,8 +242,12 @@ ul {
 .inactive {
   display: none;
 }
+.border-active {
+  border-bottom: 4px solid #e50914;
+}
 
-/* Footer */
+/* ----------------------------------------------------Footer-------------------------------------------------------- */
+
 footer {
   background: #000000;
   color: #999999;
@@ -253,4 +263,74 @@ footer .grid-4 {
 }
 footer .grid-4 ul li {
   margin: 0.8rem 0;
+}
+
+/* -----------------------------------------------Media Queries -------------------------------------------------------- */
+@media (max-width: 900px) {
+  .main-header,
+  .main-header::after {
+    height: 70vh;
+  }
+  .main-header .main-nav {
+    padding-left: 2rem;
+    justify-content: start;
+  }
+  .main-nav .logo {
+    width: 100px;
+  }
+  .main-header .header-content h1 {
+    font-size: 2.5rem;
+  }
+  .main-header .header-content p,
+  .main-header .header-content .watch-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .main-header .header-content .watch-btn {
+    padding: 1rem;
+    width: 90%;
+  }
+  .tab-headers > div i {
+    padding-bottom: 1rem;
+  }
+  .tab-headers > div p {
+    display: none;
+  }
+  .grid-2,
+  .tab-2-content .grid-2,
+  .tab-2-content .grid-3 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .tab-1-content p,
+  .tab-2-content p,
+  .tab-3-content h3 {
+    font-size: 1.3rem;
+  }
+  .tab-1-content .watch-btn,
+  .tab-2-content .watch-btn {
+    width: 70%;
+    justify-self: center;
+  }
+  .tab-2-content .grid-3 {
+    padding: 1rem;
+    align-items: center;
+  }
+  .tab-3-content > div {
+    padding: 2rem 0rem;
+    align-items: center;
+  }
+  .tab-3-content .pricing-table th,
+  .tab-3-content .pricing-table td {
+    padding: 0.8rem 0.5rem;
+  }
+  footer .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .tab-1-content .watch-btn,
+  .tab-2-content .watch-btn {
+    width: 100%;
+  }
 }

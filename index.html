@@ -33,7 +33,7 @@
     <section class="tabs">
         <div class="container">
             <div class="tab-headers grid-3 ">
-                <div id="tab-1">
+                <div id="tab-1" class="border-active">
                     <i class="fas fa-door-open fa-3x"></i>
                     <p>Cancel at any time</p>
                 </div>
@@ -182,27 +182,33 @@
     <script>
         document.getElementById('tab-1').addEventListener('click', () => {
             document.getElementById('tab-1-content').classList.add('active')
+            document.getElementById('tab-1').classList.add('border-active')
             document.getElementById('tab-2-content').classList.remove('active')
             document.getElementById('tab-3-content').classList.remove('active')
             document.getElementById('tab-2-content').classList.add('inactive')
             document.getElementById('tab-3-content').classList.add('inactive')
-
+            document.getElementById('tab-2').classList.remove('border-active')
+            document.getElementById('tab-3').classList.remove('border-active')
         })
         document.getElementById('tab-2').addEventListener('click', () => {
             document.getElementById('tab-2-content').classList.add('active')
+            document.getElementById('tab-2').classList.add('border-active')
             document.getElementById('tab-1-content').classList.remove('active')
             document.getElementById('tab-3-content').classList.remove('active')
             document.getElementById('tab-1-content').classList.add('inactive')
             document.getElementById('tab-3-content').classList.add('inactive')
-
+            document.getElementById('tab-1').classList.remove('border-active')
+            document.getElementById('tab-3').classList.remove('border-active')
         })
         document.getElementById('tab-3').addEventListener('click', () => {
             document.getElementById('tab-3-content').classList.add('active')
+            document.getElementById('tab-3').classList.add('border-active')
             document.getElementById('tab-1-content').classList.remove('active')
             document.getElementById('tab-2-content').classList.remove('active')
             document.getElementById('tab-1-content').classList.add('inactive')
             document.getElementById('tab-2-content').classList.add('inactive')
-
+            document.getElementById('tab-1').classList.remove('border-active')
+            document.getElementById('tab-2').classList.remove('border-active')
         })
     </script>
 </body>
