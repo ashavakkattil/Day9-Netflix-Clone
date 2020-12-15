@@ -36,7 +36,8 @@ ul {
   max-width: 70%;
   margin: auto;
 }
-/* Header */
+/* ----------------------------------------------------------Header--------------------------------------------- */
+
 .main-header {
   display: flex;
   flex-direction: column;
