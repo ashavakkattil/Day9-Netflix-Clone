@@ -151,7 +151,7 @@ ul {
   align-self: flex-start;
 }
 .tab-2-content .grid-3 {
-  padding: 1rem 2.5rem;
+  padding: 2rem 2.5rem;
   align-items: flex-start;
 }
 .tab-2-content .grid-3 img {
@@ -169,7 +169,7 @@ ul {
   color: #999999;
 }
 .tab-3-content {
-  padding: 1rem 2.5rem;
+  padding: 2rem 2.2rem;
   display: flex;
   flex-direction: column;
 }
@@ -211,4 +211,22 @@ ul {
 .tab-3-content .pricing-table th {
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #000000;
+  color: #999999;
+  font-size:14px;
+}
+footer p {
+  padding: 1rem 0rem;
+}
+footer .grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+footer .grid-4 ul li{
+  margin: 0.8rem 0;
 }
