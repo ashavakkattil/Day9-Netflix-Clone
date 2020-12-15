@@ -33,15 +33,15 @@
     <section class="tabs">
         <div class="container">
             <div class="tab-headers grid-3 ">
-                <div id="tab-1" class="border-active">
+                <div id="tab-1" class="tab-item border-active">
                     <i class="fas fa-door-open fa-3x"></i>
                     <p>Cancel at any time</p>
                 </div>
-                <div id="tab-2">
+                <div id="tab-2" class="tab-item">
                     <i class="fas fa-tablet-alt fa-3x"></i>
                     <p>Watch anywhere</p>
                 </div>
-                <div id="tab-3">
+                <div id="tab-3" class="tab-item">
                     <i class="fas fa-tags fa-3x"></i>
                     <p>Pick your price</p>
                 </div>
@@ -50,7 +50,7 @@
     </section>
     <section class="tab-content">
         <div class="container">
-            <div class="tab-1-content active" id="tab-1-content">
+            <div class="tab-1-content tab-content active" id="tab-1-content">
                 <div class="grid-2 ">
                     <div>
                         <p>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</p>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-2-content inactive" id="tab-2-content">
+            <div class="tab-2-content tab-content" id="tab-2-content">
                 <div class="grid-2">
                     <p>Watch TV shows and movies anytime, anywhere — personalized for you.</p>
                     <a href="#" class="primary-btn watch-btn">watch free for 30 days</a>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-3-content inactive" id="tab-3-content">
+            <div class="tab-3-content tab-content" id="tab-3-content">
                 <div>
                     <h3>Choose one plan and watch everything on Netflix. </h3>
                     <a href="#" class="primary-btn watch-btn">watch free for 30 days</a>
@@ -179,8 +179,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.getElementById('tab-1').addEventListener('click', () => {
+    <script src="min.js">
+        /* document.getElementById('tab-1').addEventListener('click', () => {
             document.getElementById('tab-1-content').classList.add('active')
             document.getElementById('tab-1').classList.add('border-active')
             document.getElementById('tab-2-content').classList.remove('active')
@@ -209,7 +209,7 @@
             document.getElementById('tab-2-content').classList.add('inactive')
             document.getElementById('tab-1').classList.remove('border-active')
             document.getElementById('tab-2').classList.remove('border-active')
-        })
+        }) */
     </script>
 </body>
 

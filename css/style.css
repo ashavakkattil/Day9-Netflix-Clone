@@ -25,7 +25,7 @@ ul {
   text-transform: uppercase;
   transition: opacity 0.5ms;
 }
-.primary-btn:hover{
+.primary-btn:hover {
   opacity: 0.9;
 }
 .watch-btn {
@@ -54,6 +54,7 @@ ul {
   position: absolute;
   top: 0;
   background: rgba(0, 0, 0, 0.6);
+  /* box shadow first value(before coma) sets shadow in left and top and the second sets for right and bottom */
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
