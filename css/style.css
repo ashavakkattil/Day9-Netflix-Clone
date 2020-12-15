@@ -14,7 +14,9 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
-
+ul {
+  list-style: none;
+}
 .primary-btn {
   display: block;
   background: #e50914;
@@ -156,12 +158,57 @@ a {
   width: 400px;
   margin-bottom: 0.5rem;
 }
-.tab-2-content .grid-3 p, .tab-2-content .grid-3 h3 {
+.tab-2-content .grid-3 p,
+.tab-2-content .grid-3 h3 {
   font-weight: normal;
   color: #ffffff;
   margin: 10px 0px 25px 0px;
 }
-.tab-2-content .grid-3 p{
+.tab-2-content .grid-3 p {
   font-size: 1rem;
   color: #999999;
+}
+.tab-3-content {
+  padding: 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.tab-3-content h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.tab-3-content .watch-btn {
+  padding: 0.8rem 1rem;
+  align-self: center;
+}
+.tab-3-content .pricing-table {
+  margin: 2rem 0;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #999999;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.tab-3-content .pricing-table th {
+  color: #ffffff;
+}
+.tab-3-content .pricing-table th,
+.tab-3-content .pricing-table td {
+  padding: 0.8rem 1rem;
+}
+.tab-3-content .pricing-table tr:nth-child(even) {
+  background: #222222;
+}
+/* First child of every row of the table has to be aligned to the start */
+.tab-3-content .pricing-table tr > td:nth-child(1) {
+  text-align: start;
+}
+.tab-3-content .pricing-table tr {
+  margin: 2rem 0px;
+}
+.tab-3-content .pricing-table th {
+  text-transform: uppercase;
+  font-size: 1rem;
 }
