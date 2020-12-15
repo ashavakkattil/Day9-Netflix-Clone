@@ -23,6 +23,10 @@ ul {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  transition: opacity 0.5ms;
+}
+.primary-btn:hover{
+  opacity: 0.9;
 }
 .watch-btn {
   display: inline-block;
