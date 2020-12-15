@@ -99,6 +99,18 @@ ul {
 .tabs {
   border-bottom: 3px solid #999999;
 }
+#tab-1,
+#tab-2,
+#tab-3 {
+  width: 90%;
+  border-bottom: 4px solid #e50914;
+}
+.tab-headers > div{
+  cursor: pointer;
+}
+.tab-headers > div:hover {
+  color: #ffffff;
+}
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -141,6 +153,7 @@ ul {
 .tab-2-content .grid-2 {
   grid-template-columns: 4fr 2fr;
   grid-gap: 1rem;
+  padding: 2.2rem;
 }
 .tab-2-content p {
   font-size: 1.8rem;
@@ -168,7 +181,7 @@ ul {
   font-size: 1rem;
   color: #999999;
 }
-.tab-3-content {
+.tab-3-content > div {
   padding: 2rem 2.2rem;
   display: flex;
   flex-direction: column;
@@ -212,12 +225,23 @@ ul {
   text-transform: uppercase;
   font-size: 1rem;
 }
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+.active {
+  display: block !important;
+}
+.inactive {
+  display: none;
+}
 
 /* Footer */
 footer {
   background: #000000;
   color: #999999;
-  font-size:14px;
+  font-size: 14px;
 }
 footer p {
   padding: 1rem 0rem;
@@ -227,6 +251,6 @@ footer .grid-4 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
-footer .grid-4 ul li{
+footer .grid-4 ul li {
   margin: 0.8rem 0;
 }
